@@ -17,7 +17,7 @@ jobs:
       run: |
         git config --global user.name "${GITHUB_USER}"
         git config --global user.email "${GITHUB_EMAIL}"
-        git clone https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/Mint-OS/android_packages_apps_Settings.git -b lineage-17.1
+        git clone https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/MintOS-Revived/android_packages_apps_Settings.git -b lineage-17.1
         cd android_packages_apps_Settings
         git fetch https://github.com/LineageOS/android_packages_apps_Settings.git lineage-17.1
         git rebase FETCH_HEAD
